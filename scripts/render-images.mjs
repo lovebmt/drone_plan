@@ -1,21 +1,19 @@
 import { createServer } from 'node:http'
 import { createReadStream } from 'node:fs'
-import { access, mkdir, readdir, readFile, rm, stat } from 'node:fs/promises'
+import { access, mkdir, readdir, rm, stat } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright-chromium'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '..')
-const slidesPath = path.join(rootDir, 'slides.md')
 const distPagesDir = path.join(rootDir, 'dist-pages')
 const outputDir = path.join(rootDir, 'dist', 'rendered-images')
 const basePath = '/drone_plan'
 const host = '127.0.0.1'
 const port = 4173
 const viewport = { width: 1600, height: 900 }
-
-const slideCount = await countSlides(slidesPath)
+let slideCount = 0
 
 await mkdir(outputDir, { recursive: true })
 await clearOutput(outputDir)
@@ -31,6 +29,7 @@ try {
   })
 
   const page = await context.newPage()
+  slideCount = await getSlideCount(page)
 
   for (let slide = 1; slide <= slideCount; slide += 1) {
     const url = `http://${host}:${port}${basePath}/#/${slide}`
@@ -84,41 +83,14 @@ async function clearOutput(dir) {
   )
 }
 
-async function countSlides(filePath) {
-  const source = await readFile(filePath, 'utf8')
-  const lines = source.split(/\r?\n/)
-  let inFence = false
-  let frontmatterEnded = false
-  let slideCount = 0
-  let currentHasContent = false
-
-  for (const rawLine of lines) {
-    const line = rawLine.trim()
-
-    if (!frontmatterEnded) {
-      if (line === '---') frontmatterEnded = true
-      continue
-    }
-
-    if (line.startsWith('```')) {
-      inFence = !inFence
-      currentHasContent = true
-      continue
-    }
-
-    if (!inFence && line === '---') {
-      if (currentHasContent) {
-        slideCount += 1
-        currentHasContent = false
-      }
-      continue
-    }
-
-    if (line.length > 0) currentHasContent = true
-  }
-
-  if (currentHasContent) slideCount += 1
-  return slideCount
+async function getSlideCount(page) {
+  await page.goto(`http://${host}:${port}${basePath}/#/1`, { waitUntil: 'networkidle', timeout: 120000 })
+  await page.waitForFunction(() => {
+    const nav = window.__slidev__?.nav
+    const total = Number(nav?.total ?? nav?.slides?.length ?? 0)
+    return total > 1
+  }, { timeout: 120000 })
+  return page.evaluate(() => Number(window.__slidev__?.nav?.total ?? window.__slidev__?.nav?.slides?.length ?? 1))
 }
 
 async function startStaticServer({ rootDir, basePath, host, port }) {
