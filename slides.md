@@ -104,6 +104,7 @@ class: factory-gantt
   'theme': 'base',
   'themeVariables': {
     'fontFamily': 'Manrope',
+    'fontSize': '22px',
     'primaryColor': '#DCEEFF',
     'primaryTextColor': '#123459',
     'primaryBorderColor': '#1F7AFF',
@@ -164,17 +165,23 @@ class: ops
 class: roadmap
 ---
 
-## 24-Month Roadmap
+## 5-Year Roadmap
 
-1. **Phase 1 · 0-6 months**  
-   Factory setup, UAV prototyping, and core team recruitment  
-   `Output: 1-2 completed UAV models`
-2. **Phase 2 · 6-12 months**  
-   First production batch, pilot sales launch, and service process deployment  
-   `Output: 500-700 UAVs`
-3. **Phase 3 · 12-24 months**  
-   Production scale-up, market expansion, and AI/data optimization  
-   `Output: 8M USD annual revenue`
+1. **Year 1 · Build and launch**  
+   Permits, factory fit-out, pilot line, and first deliveries  
+   `Milestone: factory live`
+2. **Year 2 · Ramp Vietnam**  
+   Higher output, tighter QA, and service network coverage  
+   `Milestone: domestic scale`
+3. **Year 3 · Export ASEAN**  
+   Thailand, Indonesia, the Philippines, and nearby channels  
+   `Milestone: >70% export mix`
+4. **Year 4 · Add platform layers**  
+   Software, training, accessories, and service contracts  
+   `Milestone: recurring revenue`
+5. **Year 5 · Scale hub model**  
+   More capacity, more localization, and ASEAN hub positioning  
+   `Milestone: regional hub`
 
 ---
 layout: two-cols
@@ -183,35 +190,28 @@ class: capital
 
 ## Capital Plan
 
-### Capital allocation
+> **5-8M USD**  
+> Initial capital to commission the plant, launch the first UAV lines, and fund the first commercial cycle.
 
-- **Factory and facilities**  
-  `1.5M`
-- **Machinery**  
-  `1M`
-- **R&D**  
-  `1M`
-- **Human resources**  
-  `1.5M`
-- **Marketing and sales**  
-  `0.5M`
-- **Working capital**  
-  `1-2M`
+### Funding focus
+
+- **Plant + machinery**  
+  `2.5M`
+- **R&D + people**  
+  `2.5M`
+- **Go-to-market + working capital**  
+  `1-3M`
 
 ::right::
 
-### Revenue forecast
+### Revenue ramp
 
-- **Year 1**  
-  `8M`
-- **Year 2**  
-  `9.6M`
-- **Year 3**  
-  `11.5M`
-- **Year 4**  
-  `13.8M`
+**Year 1** `8M`  
+**Year 2** `9.6M`  
+**Year 3** `11.5M`  
+**Year 4** `13.8M`
 
-Total proposed investment: **5-8M USD**
+Export-led growth with break-even targeted in **18-24 months**
 
 ---
 layout: two-cols
