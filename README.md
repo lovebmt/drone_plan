@@ -53,6 +53,87 @@ Ban PDF da duoc export san tai `dist/UAV-Manufacturing-Complex.pdf`.
 - `slides.md`: slide deck da bien tap lai cho nhac pitch deck
 - `styles/index.css`: theme custom theo huong drone / aerospace / landing page
 
+## Cach update content cua cac slide
+
+Repo nay khong co pipeline dong bo tu dong tu `content.md` sang `slides.md`. File dang duoc Slidev render thuc te la `slides.md`, nen moi thay doi muon len slide deu can ket thuc o file nay.
+
+### Cach 1: sua truc tiep text trong `slides.md`
+
+Day la cach chinh khi can doi:
+
+- title slide
+- subtitle
+- bullet points
+- so lieu doanh thu, growth, break-even
+- ghi chu ngan theo pitch style
+
+Moi slide duoc ngan cach bang `---`. Neu can them slide moi, chen them mot block moi giua 2 dau `---`.
+
+### Cach 2: dung `content.md` lam nguon noi dung goc
+
+`content.md` phu hop khi can sua noi dung business goc theo dang de bai / outline dai hon, vi du:
+
+- cap nhat market thesis
+- doi so lieu tai chinh
+- bo sung roadmap
+- sua risk / mitigation
+
+Sau do can copy bien tap lai sang `slides.md` de rut gon ve dung pitch style. `content.md` hien tai chi la file tham chieu, khong tu dong render thanh slide.
+
+### Cach 3: update visual content bang asset
+
+Neu slide dang nhung anh thay vi text thuan, can sua asset trong `public/images/` hoac doi duong dan anh trong `slides.md`.
+
+Cac vi du hien co:
+
+- slide "Why This Project": `public/images/why-vietnam-advantage.svg`
+- slide "Factory Master Plan": `public/images/osm-south-vietnam-baked.png`, `public/images/osm-asean-baked.png`
+- slide "Business Model": `public/images/business-model-visual.png`
+
+Neu chi thay hinh ma giu nguyen ten file, `slides.md` khong can sua.
+
+### Cach 4: update slide co diagram / timeline
+
+Slide `Project Timeline` dang dung block `mermaid` ngay trong `slides.md`. Muon doi moc thoi gian, task, mau, title, hay milestone thi sua truc tiep trong code block ` ```mermaid ` do.
+
+Neu diagram render bi vo layout sau khi them noi dung, xem them class `.factory-gantt` trong `styles/index.css`.
+
+### Cach 5: update layout khi content dai hon
+
+Neu thay doi noi dung lam tran slide, xu ly theo thu tu nay:
+
+1. Rut gon copy trong `slides.md`
+2. Chia thanh them 1 slide moi
+3. Doi layout bang frontmatter cua slide, vi du `layout: two-cols` hoac `class: ...`
+4. Chinh CSS trong `styles/index.css` neu van can them khong gian
+
+### Preview va export sau khi sua
+
+Preview local:
+
+```bash
+npm run dev
+```
+
+Build web:
+
+```bash
+npm run build
+```
+
+Export PDF:
+
+```bash
+npm run export
+```
+
+Render lai tung slide thanh image / PDF tu anh:
+
+```bash
+npm run render:images
+npm run export:rendered
+```
+
 ## Cach tao anh map o slide 3
 
 Slide 3 (`Factory Master Plan`) dang dung 2 file PNG da bake san:
