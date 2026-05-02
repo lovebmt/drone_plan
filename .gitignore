@@ -5,3 +5,4 @@ dist/*
 !dist/UAV-Manufacturing-Complex.pdf
 dist-pages/
 /*.png
+dist/UAV-Manufacturing-Complex.pdf
