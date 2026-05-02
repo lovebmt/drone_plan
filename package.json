@@ -7,7 +7,10 @@
     "dev": "slidev --open",
     "build": "slidev build",
     "build:pages": "slidev build --base /drone_plan/ --out dist-pages",
-    "export": "slidev export --output dist/UAV-Manufacturing-Complex.pdf"
+    "export": "slidev export --output dist/UAV-Manufacturing-Complex.pdf",
+    "render:images": "npm run build:pages && node scripts/render-images.mjs",
+    "images:pdf": "node scripts/images-to-pdf.mjs",
+    "export:rendered": "npm run render:images && npm run images:pdf"
   },
   "devDependencies": {
     "@slidev/cli": "^52.15.0",

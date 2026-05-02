@@ -11,6 +11,30 @@
   --deck-gold: #ffbe3b;
   --deck-teal: #1fb8a6;
   --deck-shadow: 0 24px 80px rgba(26, 63, 104, 0.12);
+  --deck-shell:
+    radial-gradient(circle at top left, rgba(31, 122, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 78% 18%, rgba(89, 198, 242, 0.16), transparent 24%),
+    linear-gradient(180deg, #dfe8f4 0%, #cfdceb 100%);
+}
+
+html,
+body,
+#app,
+#page-root {
+  background: var(--deck-shell) !important;
+}
+
+#page-root {
+  position: relative;
+}
+
+.slidev-slide-container {
+  background: var(--deck-shell) !important;
+}
+
+.slidev-slide-content {
+  box-shadow: 0 26px 80px rgba(18, 52, 89, 0.14);
+  border-radius: 0.6rem;
 }
 
 .slidev-layout {
@@ -595,5 +619,239 @@
   .closing ul,
   .roadmap ol {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) and (orientation: portrait) and (pointer: coarse) {
+  #page-root::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(228, 238, 248, 0.76);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+
+  #page-root::after {
+    content: "Rotate your phone to landscape\Afor the full slide view";
+    white-space: pre-line;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: max(5.75rem, env(safe-area-inset-bottom));
+    padding: 1rem 1.15rem;
+    border-radius: 1.35rem;
+    border: 1px solid rgba(31, 122, 255, 0.14);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 24px 64px rgba(18, 52, 89, 0.16);
+    color: var(--deck-ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    line-height: 1.32;
+    text-align: center;
+    z-index: 1001;
+  }
+
+  #slide-container,
+  nav,
+  #slidev-goto-dialog,
+  .fixed.top-4.right-4 {
+    filter: saturate(0.88) blur(1px);
+    opacity: 0.22;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 960px) and (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .slidev-layout {
+    --deck-mobile-fit: 0.84;
+    transform: scale(var(--deck-mobile-fit));
+    transform-origin: top left;
+    width: calc(100% / var(--deck-mobile-fit));
+    height: calc(100% / var(--deck-mobile-fit));
+  }
+
+  .slidev-layout {
+    padding: 0.92rem 1rem !important;
+  }
+
+  .slidev-layout h1 {
+    font-size: 1.95rem;
+  }
+
+  .slidev-layout h2 {
+    font-size: 1.22rem;
+  }
+
+  .slidev-layout h3 {
+    font-size: 0.66rem;
+    margin-top: 0.56rem;
+    margin-bottom: 0.34rem;
+    letter-spacing: 0.14em;
+  }
+
+  .slidev-layout p {
+    margin-top: 0.28rem;
+    font-size: 0.78rem;
+    line-height: 1.28;
+  }
+
+  .slidev-layout blockquote {
+    margin: 0.55rem 0 0.75rem;
+    padding: 0.78rem 0.88rem;
+  }
+
+  .slidev-layout blockquote p {
+    font-size: 0.9rem;
+    line-height: 1.14;
+  }
+
+  .slidev-layout ul,
+  .slidev-layout ol {
+    margin-top: 0.45rem;
+    gap: 0.34rem;
+  }
+
+  .slidev-layout li {
+    padding: 0.52rem 0.64rem;
+    border-radius: 1rem;
+    font-size: 0.67rem;
+    line-height: 1.16;
+  }
+
+  .slidev-layout li strong {
+    font-size: 0.72rem;
+  }
+
+  .slidev-layout li code {
+    margin-top: 0.24rem;
+  }
+
+  .slidev-layout .col-right {
+    padding-left: 0.72rem;
+  }
+
+  .hero h1 {
+    max-width: 8.5em;
+    font-size: 2.2rem;
+  }
+
+  .hero p:first-of-type {
+    font-size: 0.62rem;
+  }
+
+  .hero p:nth-of-type(2) {
+    margin-top: 0.48rem;
+    font-size: 0.8rem;
+  }
+
+  .hero ul {
+    margin-top: 0.72rem;
+  }
+
+  .hero li {
+    min-height: 6.3rem;
+    padding: 0.68rem 3.7rem 0.66rem 0.78rem;
+  }
+
+  .hero li::after {
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: 1.35rem 1.35rem;
+  }
+
+  .hero li code {
+    margin: 0.24rem 0 0.18rem;
+    font-size: 1.08rem;
+  }
+
+  .slidev-layout.two-columns.thesis-layout,
+  .slidev-layout.two-columns.business-layout {
+    column-gap: 0.5rem;
+  }
+
+  .business .col-left > p,
+  .thesis .col-left > p,
+  .slidev-layout.dual-map > p:first-of-type,
+  .capital p:last-of-type,
+  .factory-gantt p:last-of-type {
+    font-size: 0.74rem;
+  }
+
+  .business .col-left li,
+  .thesis .col-left li {
+    padding: 0.5rem 0.62rem;
+  }
+
+  .slidev-layout.business-layout {
+    --deck-mobile-fit: 0.76;
+    transform: scale(var(--deck-mobile-fit));
+    width: calc(100% / var(--deck-mobile-fit));
+    height: calc(100% / var(--deck-mobile-fit));
+    grid-template-columns: minmax(0, 0.56fr) minmax(0, 1.44fr);
+    column-gap: 0.42rem;
+  }
+
+  .business .col-left > p {
+    font-size: 0.7rem;
+  }
+
+  .business .col-left ul {
+    gap: 0.24rem;
+  }
+
+  .business .col-left li {
+    padding: 0.42rem 0.52rem;
+    font-size: 0.62rem;
+  }
+
+  .business .col-left li strong {
+    font-size: 0.67rem;
+  }
+
+  .business .col-right img {
+    max-height: 15.2rem;
+  }
+
+  .slidev-layout.dual-map {
+    gap: 0.45rem;
+  }
+
+  .slidev-layout.dual-map h3 + p {
+    padding: 0.26rem;
+    border-radius: 1.2rem;
+  }
+
+  .factory-gantt .mermaid {
+    margin-top: 0.56rem;
+    padding: 0.62rem 0.72rem;
+    border-radius: 1.08rem;
+  }
+
+  .factory-gantt .mermaid svg {
+    min-height: 14.8rem;
+  }
+
+  nav {
+    margin: 0.3rem 0.45rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8px);
+  }
+
+  nav .slidev-icon-btn[title="Record video"],
+  nav .slidev-icon-btn[title="Switch to dark mode theme"],
+  nav .slidev-icon-btn[title="Presenter Mode"],
+  nav .slidev-icon-btn[title="Show editor"],
+  nav .slidev-icon-btn[title="Show info"],
+  nav .slidev-icon-btn[title="Change sync settings"],
+  nav .slidev-icon-btn[title="More Options"] {
+    display: none !important;
+  }
+
+  nav .w-1px {
+    display: none !important;
   }
 }

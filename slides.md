@@ -11,7 +11,7 @@ mdc: false
 drawings:
   enabled: false
 ---
-# UAV Manufacturing Complex
+# UAV Manufacturing
 
 Ho Chi Minh City, May 1, 2026
 
@@ -91,7 +91,7 @@ A scalable UAV platform built to win export markets first.
 
 ::right::
 
-![Business model visual](./public/images/business-model-visual.svg)
+![Business model visual](./public/images/business-model-visual.png)
 
 ---
 class: factory-gantt
@@ -145,9 +145,7 @@ class: ops
 > **1,200-1,500 UAVs per year**  
 > ASP ranges from 4,000 to 8,000 USD, supporting a year 1 target near 8M USD.
 
-### Core technologies
 
-`Flight Controller` `AI Vision` `IoT + Cloud` `Energy Management`
 
 ::right::
 
