@@ -1,12 +1,13 @@
 import { createServer } from 'node:http'
 import { createReadStream } from 'node:fs'
-import { access, mkdir, readdir, rm, stat } from 'node:fs/promises'
+import { access, mkdir, readFile, readdir, rm, stat } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright-chromium'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '..')
+const slidesPath = path.join(rootDir, 'slides.md')
 const distPagesDir = path.join(rootDir, 'dist-pages')
 const outputDir = path.join(rootDir, 'dist', 'rendered-images')
 const basePath = '/drone_plan'
@@ -29,7 +30,7 @@ try {
   })
 
   const page = await context.newPage()
-  slideCount = await getSlideCount(page)
+  slideCount = await countSlides(slidesPath)
 
   for (let slide = 1; slide <= slideCount; slide += 1) {
     const url = `http://${host}:${port}${basePath}/#/${slide}`
@@ -83,14 +84,78 @@ async function clearOutput(dir) {
   )
 }
 
-async function getSlideCount(page) {
-  await page.goto(`http://${host}:${port}${basePath}/#/1`, { waitUntil: 'networkidle', timeout: 120000 })
-  await page.waitForFunction(() => {
-    const nav = window.__slidev__?.nav
-    const total = Number(nav?.total ?? nav?.slides?.length ?? 0)
-    return total > 1
-  }, { timeout: 120000 })
-  return page.evaluate(() => Number(window.__slidev__?.nav?.total ?? window.__slidev__?.nav?.slides?.length ?? 1))
+async function countSlides(filePath) {
+  const source = await readFile(filePath, 'utf8')
+  const chunks = splitSlideChunks(source)
+  const hasDocumentFrontmatter = source.trimStart().startsWith('---') && chunks[0]?.trim() === ''
+  let index = hasDocumentFrontmatter ? 2 : 0
+  let total = 0
+
+  while (index < chunks.length) {
+    const chunk = chunks[index]?.trim() ?? ''
+
+    if (!chunk) {
+      index += 1
+      continue
+    }
+
+    if (isLikelyFrontmatter(chunk) && index + 1 < chunks.length) {
+      total += 1
+      index += 2
+      continue
+    }
+
+    total += 1
+    index += 1
+  }
+
+  return total
+}
+
+function splitSlideChunks(source) {
+  const lines = source.split(/\r?\n/)
+  const chunks = []
+  const current = []
+  let inFence = false
+
+  for (const line of lines) {
+    const trimmed = line.trim()
+
+    if (trimmed.startsWith('```')) {
+      inFence = !inFence
+    }
+
+    if (!inFence && trimmed === '---') {
+      chunks.push(current.join('\n'))
+      current.length = 0
+      continue
+    }
+
+    current.push(line)
+  }
+
+  chunks.push(current.join('\n'))
+  return chunks
+}
+
+function isLikelyFrontmatter(chunk) {
+  const lines = chunk
+    .split(/\r?\n/)
+    .map((line) => line.trimEnd())
+    .filter((line) => line.trim().length > 0)
+
+  if (!lines.length) return false
+
+  return lines.every((line) => {
+    const trimmed = line.trim()
+    return /^[A-Za-z0-9_-]+:/.test(trimmed)
+      || /^-\s+/.test(trimmed)
+      || /^[A-Za-z0-9_-]+\s*:$/.test(trimmed)
+      || /^[A-Za-z0-9_-]+\s*:\s*$/.test(trimmed)
+      || /^[A-Za-z0-9_-]+\s*:\s+.+$/.test(trimmed)
+      || /^[A-Za-z0-9_-]+\s*:\s*(true|false|null|\d+(\.\d+)?)$/i.test(trimmed)
+      || /^[\s]+[A-Za-z0-9_-]+:/.test(line)
+  })
 }
 
 async function startStaticServer({ rootDir, basePath, host, port }) {
