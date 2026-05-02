@@ -87,7 +87,7 @@
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="492" y="1004" width="636" height="92" rx="24" fill="#F9FCFF"/>
+    <rect x="392" y="1004" width="840" height="92" rx="24" fill="#F9FCFF"/>
     <text x="810" y="1062" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle">Policy + talent + demand + infrastructure + ASEAN access</text>
   </g>
 </svg>

@@ -41,31 +41,6 @@
     <path d="M1005 718C914 540 804 388 632 305" stroke="url(#airRoute)" stroke-width="10" stroke-dasharray="20 18"/>
   </g>
 
-  <g filter="url(#shadow)">
-    <rect x="82" y="78" width="712" height="290" rx="34" fill="#FFFFFF" fill-opacity="0.93"/>
-    <text x="130" y="142" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">ASEAN ACCESS MODEL</text>
-    <text x="130" y="204" fill="#11375D" font-family="Space Grotesk, sans-serif" font-size="46" font-weight="700">Southern Vietnam as the operating hub</text>
-    <text x="130" y="258" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="28">Land freight to Cambodia and Thailand, sea links to Singapore and Indonesia,</text>
-    <text x="130" y="298" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="28">and air reach into major ASEAN capitals from the HCMC cluster.</text>
-  </g>
-
-  <g filter="url(#shadow)">
-    <rect x="1640" y="78" width="672" height="314" rx="34" fill="#FFFFFF" fill-opacity="0.93"/>
-    <text x="1688" y="142" fill="#11375D" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700">Three simple corridors</text>
-
-    <line x1="1690" y1="204" x2="1810" y2="204" stroke="url(#landRoute)" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 18"/>
-    <text x="1844" y="214" fill="#11375D" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Land corridor</text>
-    <text x="1844" y="250" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Phnom Penh to Bangkok by road</text>
-
-    <line x1="1690" y1="288" x2="1810" y2="288" stroke="url(#seaRoute)" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 18"/>
-    <text x="1844" y="298" fill="#11375D" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Sea route</text>
-    <text x="1844" y="334" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Singapore hub with Malaysia and Indonesia links</text>
-
-    <line x1="1690" y1="372" x2="1810" y2="372" stroke="url(#airRoute)" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 18"/>
-    <text x="1844" y="382" fill="#11375D" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Air reach</text>
-    <text x="1844" y="418" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Regional capitals within fast deployment range</text>
-  </g>
-
   <g>
     <circle cx="963" cy="725" r="26" fill="#1F7AFF" stroke="#FFFFFF" stroke-width="10"/>
     <circle cx="1005" cy="718" r="22" fill="#7A66FF" stroke="#FFFFFF" stroke-width="8"/>
@@ -79,30 +54,30 @@
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="1090" y="742" width="520" height="120" rx="28" fill="#FFFFFF" fill-opacity="0.92"/>
+    <rect x="1068" y="736" width="584" height="128" rx="28" fill="#FFFFFF" fill-opacity="0.92"/>
     <text x="1130" y="798" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="31" font-weight="700">SOUTHERN VIETNAM CLUSTER</text>
-    <text x="1130" y="846" fill="#11375D" font-family="Manrope, sans-serif" font-size="33" font-weight="800">HCMC, Binh Duong, Long An, Long Thanh</text>
+    <text x="1110" y="848" fill="#11375D" font-family="Manrope, sans-serif" font-size="37" font-weight="800">HCMC, Binh Duong, Long An, Long Thanh</text>
 
-    <rect x="734" y="580" width="250" height="82" rx="20" fill="#E5F6F2" fill-opacity="0.96"/>
-    <text x="766" y="632" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Phnom Penh</text>
+    <rect x="720" y="572" width="286" height="90" rx="20" fill="#E5F6F2" fill-opacity="0.96"/>
+    <text x="754" y="630" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Phnom Penh</text>
 
-    <rect x="170" y="460" width="228" height="82" rx="20" fill="#E5F6F2" fill-opacity="0.96"/>
-    <text x="204" y="512" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Bangkok</text>
+    <rect x="156" y="452" width="258" height="90" rx="20" fill="#E5F6F2" fill-opacity="0.96"/>
+    <text x="192" y="510" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Bangkok</text>
 
-    <rect x="594" y="1288" width="228" height="82" rx="20" fill="#FFF0D3" fill-opacity="0.97"/>
-    <text x="630" y="1340" fill="#A66800" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Singapore</text>
+    <rect x="576" y="1280" width="266" height="90" rx="20" fill="#FFF0D3" fill-opacity="0.97"/>
+    <text x="614" y="1338" fill="#A66800" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Singapore</text>
 
-    <rect x="998" y="1574" width="216" height="82" rx="20" fill="#FFF0D3" fill-opacity="0.97"/>
-    <text x="1034" y="1626" fill="#A66800" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Jakarta</text>
+    <rect x="982" y="1566" width="244" height="90" rx="20" fill="#FFF0D3" fill-opacity="0.97"/>
+    <text x="1018" y="1624" fill="#A66800" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Jakarta</text>
 
-    <rect x="1918" y="400" width="214" height="82" rx="20" fill="#ECE9FF" fill-opacity="0.97"/>
-    <text x="1950" y="452" fill="#5140D3" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Manila</text>
+    <rect x="1900" y="392" width="248" height="90" rx="20" fill="#ECE9FF" fill-opacity="0.97"/>
+    <text x="1936" y="450" fill="#5140D3" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Manila</text>
 
-    <rect x="352" y="196" width="214" height="82" rx="20" fill="#ECE9FF" fill-opacity="0.97"/>
-    <text x="386" y="248" fill="#5140D3" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Vientiane</text>
+    <rect x="332" y="188" width="252" height="90" rx="20" fill="#ECE9FF" fill-opacity="0.97"/>
+    <text x="366" y="246" fill="#5140D3" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Vientiane</text>
 
-    <rect x="332" y="1060" width="246" height="76" rx="18" fill="#FFF0D3" fill-opacity="0.97"/>
-    <text x="364" y="1109" fill="#A66800" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Kuala Lumpur</text>
+    <rect x="314" y="1052" width="286" height="84" rx="18" fill="#FFF0D3" fill-opacity="0.97"/>
+    <text x="348" y="1108" fill="#A66800" font-family="Manrope, sans-serif" font-size="32" font-weight="800">Kuala Lumpur</text>
   </g>
 
   <g filter="url(#shadow)">

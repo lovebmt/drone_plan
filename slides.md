@@ -11,21 +11,21 @@ mdc: false
 drawings:
   enabled: false
 ---
-# UAV Manufacturing
+# ASEAN UAV Manufacturing Base
 
-Ho Chi Minh City, May 1, 2026
+Ho Chi Minh City, May 2026
 
-A modern civilian UAV manufacturing platform for agriculture, industry, rescue operations, and education.
+A Vietnam manufacturing base that extends an existing China drone platform into Vietnam and the wider ASEAN market.
 
-- **Year 1 Revenue**  
+- **Investment Ask**  
+  `5-8M USD`  
+  To launch a Vietnam assembly, testing, and service base
+- **12-Month Target**  
+  `Factory commissioned`  
+  First deliveries in Vietnam and pilot ASEAN channels live
+- **First Full-Year Revenue**  
   `8M USD`  
-  Around 1,200 UAV units at roughly 6,500 USD ASP
-- **Growth Target**  
-  `20% / year`  
-  Scaling toward 13.8M USD by year 4
-- **Break-even**  
-  `18-24 months`  
-  Supported by product, service, and software revenue
+  Built on proven platforms, local assembly, and service revenue
 
 ---
 layout: two-cols
@@ -33,22 +33,22 @@ class: thesis
 layoutClass: thesis-layout
 ---
 
-## Why This Project
+## Why This Expansion Makes Sense
 
-> Right project. Right market. Right timing.
+> Not a replacement for China. A second base for ASEAN.
 
-Vietnam concentrates the five key conditions for a UAV factory into one market.
+Vietnam gives your group a lower-risk way to expand regional drone manufacturing without rebuilding core capability from zero.
 
 ### Why it works
 
-- **Policy support**  
-  National industry alignment
-- **Cost + talent**  
-  Affordable build + skilled labor
-- **Demand gap**  
-  Demand grows beyond local supply
-- **ASEAN launchpad**  
-  Fast route into regional markets
+- **Reuse existing platform**  
+  Transfer mature drone models, QA discipline, and supplier know-how
+- **Vietnam cost + access**  
+  Competitive labor, industrial zones, and faster local market entry
+- **ASEAN commercial bridge**  
+  Serve Vietnam first, then expand into nearby regional channels
+- **Risk diversification**  
+  Add a second operating base outside a single-country footprint
 
 ::right::
 
@@ -58,15 +58,15 @@ Vietnam concentrates the five key conditions for a UAV factory into one market.
 class: dual-map
 ---
 
-## Factory Master Plan
+## Vietnam Hub Strategy
 
-Southern Vietnam works as the manufacturing base inside Vietnam and the gateway into ASEAN, so the local logistics cluster and regional reach should be shown together.
+Southern Vietnam is the right base for final assembly, testing, localization, and ASEAN distribution because it combines ports, airports, supplier density, and outbound reach in one operating zone.
 
 ### Southern Vietnam Cluster
 
 ![Vietnam logistics map](./public/images/osm-south-vietnam-baked.png)
 
-### ASEAN Connectivity
+### ASEAN Reach
 
 ![ASEAN connectivity map](./public/images/osm-asean-baked.png)
 
@@ -76,18 +76,18 @@ class: business
 layoutClass: business-layout
 ---
 
-## Business Model
+## Operating Model
 
-A scalable UAV platform built to win export markets first.
+A staged China-plus-Vietnam model reduces startup risk, shortens time to market, and builds regional upside in phases.
 
 ### Model highlights
 
-- **70% export target**  
-  Regional markets drive the revenue mix
-- **Shared factory platform**  
-  Four UAV lines on one operating base
-- **Layered monetization**  
-  Hardware, service, software, accessories
+- **Phase 1: transfer and assemble**  
+  Core modules from China, final assembly and QA in Vietnam
+- **Phase 2: local service revenue**  
+  Maintenance, training, spare parts, batteries, and support contracts
+- **Phase 3: regional scale-up**  
+  Vietnam localization, channel partners, and software or data upsell
 
 ::right::
 
@@ -97,7 +97,7 @@ A scalable UAV platform built to win export markets first.
 class: factory-gantt
 ---
 
-## Project Timeline
+## 12-Month Launch Plan
 
 ```mermaid
 %%{init: {
@@ -114,74 +114,74 @@ class: factory-gantt
   }
 }}%%
 gantt
-    title 12-Month Project Execution Timeline
+    title 12-Month Vietnam Launch Timeline
     dateFormat  YYYY-MM-DD
     axisFormat  %b
     tickInterval 1month
-    section Project setup
-    Market research + feasibility   :done, research, 2026-05-01, 2026-06-15
-    Legal setup + paperwork         :active, paperwork, 2026-05-15, 2026-07-15
-    Licensing + approvals           :permit, 2026-06-01, 2026-09-15
+    section Setup
+    Investment decision + entity setup :done, entity, 2026-05-01, 2026-06-15
+    Site selection + lease + design    :active, site, 2026-05-15, 2026-07-31
+    Licensing + regulatory work         :permit, 2026-06-01, 2026-09-30
 
-    section Factory rollout
-    Site selection + design         :site, 2026-07-01, 2026-08-15
-    Factory construction + fit-out  :build, 2026-08-01, 2026-11-30
-    Line install + commissioning    :commission, 2026-11-01, 2027-01-15
-    Pilot production + validation   :pilot, 2027-01-01, 2027-02-28
+    section Transfer and factory
+    Equipment procurement + fit-out     :equip, 2026-07-01, 2026-10-31
+    SOP transfer + line installation    :install, 2026-09-01, 2026-12-15
+    Pilot assembly + QA validation      :pilot, 2026-12-01, 2027-02-15
 
     section Commercial launch
-    Channel setup + pre-sales       :salesprep, 2026-11-01, 2027-01-31
-    First customer deliveries       :delivery, 2027-02-01, 2027-03-31
+    Reference projects + field trials   :trial, 2027-01-01, 2027-03-15
+    First deliveries in Vietnam         :delivery, 2027-02-01, 2027-03-31
+    ASEAN channel onboarding            :channel, 2027-01-15, 2027-04-15
 ```
 
-Target outcome: **licensed project, operating factory, and first commercial sales within 12 months**
+Target outcome: **a commissioned Vietnam base in 12 months, with first deliveries completed and the first full operating year targeted near 8M USD**
 
 ---
 layout: two-cols
 class: ops
 ---
 
-## Execution Engine
+## Execution Model
 
-> **1,200-1,500 UAVs per year**  
-> ASP ranges from 4,000 to 8,000 USD, supporting a year 1 target near 8M USD.
+> **China + Vietnam split**  
+> China provides platform leverage and supplier depth. Vietnam provides local execution and ASEAN access.
 
 
 
 ::right::
 
-### Team structure
+### Operating responsibilities
 
-- **R&D - 40 people**  
-  Embedded, control systems, and AI / vision
-- **Production - 50-60 people**  
-  Assembly, QC, calibration, and flight testing
-- **Business - 20-30 people**  
-  B2B sales, dealer channels, and pilot deployments
-- **Back office - 15-20 people**  
-  Finance, HR, supply chain, and procurement
+- **China base**  
+  Platform design, core electronics, QA templates, and supplier network
+- **Vietnam base**  
+  Final assembly, testing, localization, field service, and customer delivery
+- **Local team 120-150 people**  
+  Production, engineering support, business development, and back office
+- **Commercial sequence**  
+  Agriculture and industrial inspection first, then ASEAN distributors and partners
 
 ---
 class: roadmap
 ---
 
-## 5-Year Roadmap
+## 5-Year Growth Roadmap
 
-1. **Year 1 · Build and launch**  
-   Permits, factory fit-out, pilot line, and first deliveries  
+1. **Year 1 · Commission the Vietnam base**  
+   Legal setup, line install, pilot assembly, and first customer deliveries  
    `Milestone: factory live`
-2. **Year 2 · Ramp Vietnam**  
-   Higher output, tighter QA, and service network coverage  
-   `Milestone: domestic scale`
-3. **Year 3 · Export ASEAN**  
-   Thailand, Indonesia, the Philippines, and nearby channels  
-   `Milestone: >70% export mix`
-4. **Year 4 · Add platform layers**  
-   Software, training, accessories, and service contracts  
-   `Milestone: recurring revenue`
-5. **Year 5 · Scale hub model**  
-   More capacity, more localization, and ASEAN hub positioning  
-   `Milestone: regional hub`
+2. **Year 2 · Prove the Vietnam model**  
+   Reference customers, service network, and stable domestic operations  
+   `Milestone: repeatable domestic sales`
+3. **Year 3 · Scale ASEAN exports**  
+   Cambodia, Thailand, Indonesia, and nearby partner channels  
+   `Milestone: export mix 30-40%`
+4. **Year 4 · Improve margin and recurring revenue**  
+   More localization, maintenance plans, training, and software contracts  
+   `Milestone: stronger operating economics`
+5. **Year 5 · Run a dual-base regional platform**  
+   Vietnam as ASEAN hub, China as core platform and supply anchor  
+   `Milestone: export-led regional manufacturing`
 
 ---
 layout: two-cols
@@ -191,55 +191,57 @@ class: capital
 ## Capital Plan
 
 > **5-8M USD**  
-> Initial capital to commission the plant, launch the first UAV lines, and fund the first commercial cycle.
+> To open a de-risked Vietnam manufacturing base built on an existing China drone platform.
 
 ### Funding focus
 
-- **Plant + machinery**  
-  `2.5M`
-- **R&D + people**  
-  `2.5M`
-- **Go-to-market + working capital**  
-  `1-3M`
+- **Factory + line setup**  
+  `2-3M`
+- **Working capital + imported kits/components**  
+  `1.5-2.5M`
+- **Team, certification, and channel build**  
+  `1.5-2.5M`
 
 ::right::
 
-### Revenue ramp
+### What this unlocks in 24 months
 
-**Year 1** `8M`  
-**Year 2** `9.6M`  
-**Year 3** `11.5M`  
-**Year 4** `13.8M`
-
-Export-led growth with break-even targeted in **18-24 months**
+- **Factory commissioned**  
+  Vietnam assembly, QA, testing, and service base
+- **Commercial proof**  
+  Reference customers in Vietnam and first ASEAN channel partners
+- **Strategic value**  
+  A second manufacturing base for your group outside China
+- **Financial target**  
+  Around `8M USD` in the first full operating year
 
 ---
 layout: two-cols
 class: market
 ---
 
-## Go To Market
+## Why This Is Attractive to Your Group
 
-### Priority channels
+### Strategic fit
 
-- **Agriculture**  
-  Partner with farms and aquaculture operators, then deploy live field demos
-- **Industry**  
-  Inspection for factories, utilities, mapping, and infrastructure monitoring
-- **Government**  
-  Rescue, firefighting, and specialized public safety missions
-- **Education**  
-  Universities, STEM centers, and hands-on UAV learning programs
+- **Extend, not replace China**  
+  Keep core platform and supplier strengths where they already work
+- **Open Vietnam faster**  
+  Local presence improves hiring, customer trust, and market access
+- **Build ASEAN optionality**  
+  Vietnam becomes the bridge into nearby regional channels
+- **Create valuation upside**  
+  A dual-base model is stronger than a single-country manufacturing footprint
 
 ::right::
 
 ### Risk control
 
-- **Competition from DJI**  
-  Focus on niche markets, local deployment speed, and competitive pricing
-- **Technology stability**  
-  Expand field testing, calibration discipline, and pilot feedback loops
-- **UAV regulation**  
-  Work early with regulators and standardize operating procedures
-- **Supply chain risk**  
-  Build multi-source procurement and hold stock for critical components
+- **Start with proven platforms**  
+  No need to fund product invention from zero on day one
+- **Localize in stages**  
+  Begin with transfer and assembly, then deepen sourcing over time
+- **Validate with reference customers**  
+  Win early proof before committing aggressive scale capex
+- **Keep supply flexibility**  
+  Use China supply depth first and expand local sourcing selectively
