@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
+    "build:pages": "slidev build --base /drone_plan/ --out dist-pages",
     "export": "slidev export --output dist/UAV-Manufacturing-Complex.pdf"
   },
   "devDependencies": {

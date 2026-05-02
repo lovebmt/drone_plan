@@ -3,4 +3,5 @@ node_modules/
 .slidev/
 dist/*
 !dist/UAV-Manufacturing-Complex.pdf
+dist-pages/
 /*.png

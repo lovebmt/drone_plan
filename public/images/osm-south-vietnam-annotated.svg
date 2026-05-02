@@ -13,7 +13,7 @@
     </linearGradient>
   </defs>
 
-  <image href="/images/osm-south-vietnam-clean.png" x="0" y="0" width="2400" height="1800" preserveAspectRatio="none"/>
+  <image href="osm-south-vietnam-clean.png" x="0" y="0" width="2400" height="1800" preserveAspectRatio="none"/>
 
   <g opacity="0.95">
     <path d="M965 1218L1238 838L1266 627L1355 720L1410 885L1298 1090L1125 1248L965 1218Z" fill="url(#clusterFill)" stroke="#1F7AFF" stroke-width="8" stroke-dasharray="18 16"/>

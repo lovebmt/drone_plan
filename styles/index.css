@@ -231,17 +231,17 @@
 }
 
 .hero li:nth-child(1)::after {
-  background-image: url("/images/icon-revenue.svg");
+  background-image: url("../public/images/icon-revenue.svg");
   background-color: rgba(234, 244, 255, 0.96);
 }
 
 .hero li:nth-child(2)::after {
-  background-image: url("/images/icon-growth.svg");
+  background-image: url("../public/images/icon-growth.svg");
   background-color: rgba(231, 250, 246, 0.96);
 }
 
 .hero li:nth-child(3)::after {
-  background-image: url("/images/icon-breakeven.svg");
+  background-image: url("../public/images/icon-breakeven.svg");
   background-color: rgba(255, 245, 224, 0.98);
 }
 

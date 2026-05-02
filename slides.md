@@ -5,6 +5,8 @@ titleTemplate: "%s"
 info: Pitch deck for UAV Manufacturing Complex
 class: hero text-left
 transition: slide-left
+routerMode: hash
+preloadImages: false
 mdc: false
 drawings:
   enabled: false
@@ -50,7 +52,7 @@ Vietnam concentrates the five key conditions for a UAV factory into one market.
 
 ::right::
 
-![Vietnam advantage infographic](/images/why-vietnam-advantage.svg)
+![Vietnam advantage infographic](./public/images/why-vietnam-advantage.svg)
 
 ---
 class: dual-map
@@ -62,11 +64,11 @@ Southern Vietnam works as the manufacturing base inside Vietnam and the gateway 
 
 ### Southern Vietnam Cluster
 
-![Vietnam logistics map](/images/osm-south-vietnam-baked.png)
+![Vietnam logistics map](./public/images/osm-south-vietnam-baked.png)
 
 ### ASEAN Connectivity
 
-![ASEAN connectivity map](/images/osm-asean-baked.png)
+![ASEAN connectivity map](./public/images/osm-asean-baked.png)
 
 ---
 layout: two-cols
@@ -89,7 +91,7 @@ A scalable UAV platform built to win export markets first.
 
 ::right::
 
-![Business model visual](/images/business-model-visual.svg)
+![Business model visual](./public/images/business-model-visual.svg)
 
 ---
 class: factory-gantt
@@ -243,17 +245,3 @@ class: market
   Work early with regulators and standardize operating procedures
 - **Supply chain risk**  
   Build multi-source procurement and hold stock for critical components
-
----
-class: closing
-layout: center
----
-
-# Build the manufacturing backbone for Vietnam's UAV market
-
-FUVITECH combines production capability, engineering depth, IoT experience, and local market understanding into a scalable UAV platform.
-
-- **Real manufacturing capability**
-- **Strong engineering base**
-- **AI + service revenue potential**
-- **Deep Vietnam market fit**
