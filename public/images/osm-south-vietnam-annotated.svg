@@ -1,0 +1,106 @@
+<svg width="2400" height="1800" viewBox="0 0 2400 1800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-200" y="-200" width="2800" height="2200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#29598D" flood-opacity="0.16"/>
+    </filter>
+    <linearGradient id="clusterFill" x1="960" y1="520" x2="1430" y2="1260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#59C6F2" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="seaRoute" x1="1740" y1="1170" x2="2260" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFBE3B"/>
+      <stop offset="1" stop-color="#F08A00"/>
+    </linearGradient>
+  </defs>
+
+  <image href="/images/osm-south-vietnam-clean.png" x="0" y="0" width="2400" height="1800" preserveAspectRatio="none"/>
+
+  <g opacity="0.95">
+    <path d="M965 1218L1238 838L1266 627L1355 720L1410 885L1298 1090L1125 1248L965 1218Z" fill="url(#clusterFill)" stroke="#1F7AFF" stroke-width="8" stroke-dasharray="18 16"/>
+  </g>
+
+  <g stroke-linecap="round">
+    <path d="M1238 838L1484 908" stroke="#1F7AFF" stroke-width="6" stroke-dasharray="16 14"/>
+    <path d="M1238 838L1271 843" stroke="#1FB8A6" stroke-width="6" stroke-dasharray="10 10"/>
+    <path d="M1238 838L1760 857" stroke="#1FB8A6" stroke-width="6" stroke-dasharray="16 14"/>
+    <path d="M965 1218L1733 1174" stroke="url(#seaRoute)" stroke-width="6" stroke-dasharray="18 16"/>
+    <path d="M965 1218L620 389" stroke="#7A66FF" stroke-width="6" stroke-dasharray="18 16"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1560" y="70" width="720" height="396" rx="34" fill="rgba(255,255,255,0.92)"/>
+    <text x="1612" y="138" fill="#11375D" font-family="Space Grotesk, sans-serif" font-size="44" font-weight="700">Southern Vietnam Manufacturing Cluster</text>
+    <text x="1612" y="198" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">WHY THIS ZONE WORKS</text>
+
+    <text x="1612" y="256" fill="#11375D" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Port access</text>
+    <text x="1804" y="256" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Cat Lai 20-30 km • Cai Mep 70-90 km</text>
+
+    <text x="1612" y="306" fill="#11375D" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Air access</text>
+    <text x="1804" y="306" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Tan Son Nhat now • Long Thanh next phase</text>
+
+    <text x="1612" y="356" fill="#11375D" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Road spine</text>
+    <text x="1804" y="356" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">QL1A • QL13 • Ring roads • expressways</text>
+
+    <text x="1612" y="406" fill="#11375D" font-family="Manrope, sans-serif" font-size="28" font-weight="800">ASEAN reach</text>
+    <text x="1804" y="406" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="27">Cambodia land corridor + Singapore sea route</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="90" width="500" height="152" rx="28" fill="rgba(255,255,255,0.9)"/>
+    <text x="110" y="150" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">FOCUS ZONE</text>
+    <text x="110" y="198" fill="#11375D" font-family="Manrope, sans-serif" font-size="38" font-weight="800">Ho Chi Minh City</text>
+    <text x="110" y="232" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="28">Binh Duong • Long An triangle</text>
+  </g>
+
+  <g>
+    <circle cx="1238" cy="838" r="22" fill="#1F7AFF" stroke="white" stroke-width="8"/>
+    <circle cx="1266" cy="627" r="20" fill="#1F7AFF" stroke="white" stroke-width="8"/>
+    <circle cx="965" cy="1218" r="20" fill="#1F7AFF" stroke="white" stroke-width="8"/>
+    <circle cx="1484" cy="908" r="18" fill="#1F7AFF" stroke="white" stroke-width="7"/>
+    <circle cx="1733" cy="1174" r="18" fill="#F08A00" stroke="white" stroke-width="7"/>
+    <circle cx="1271" cy="843" r="16" fill="#1FB8A6" stroke="white" stroke-width="7"/>
+    <circle cx="1760" cy="857" r="16" fill="#1FB8A6" stroke="white" stroke-width="7"/>
+    <circle cx="620" cy="389" r="18" fill="#7A66FF" stroke="white" stroke-width="7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1310" y="520" width="356" height="92" rx="22" fill="rgba(255,255,255,0.92)"/>
+    <text x="1340" y="575" fill="#11375D" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Binh Duong</text>
+    <text x="1542" y="575" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="26">industrial parks + suppliers</text>
+
+    <rect x="1300" y="980" width="410" height="92" rx="22" fill="rgba(255,255,255,0.92)"/>
+    <text x="1330" y="1035" fill="#11375D" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Ho Chi Minh City</text>
+    <text x="1598" y="1035" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="26">engineering + customers</text>
+
+    <rect x="560" y="1280" width="352" height="92" rx="22" fill="rgba(255,255,255,0.92)"/>
+    <text x="590" y="1335" fill="#11375D" font-family="Manrope, sans-serif" font-size="34" font-weight="800">Long An</text>
+    <text x="744" y="1335" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="26">land + western corridor</text>
+
+    <rect x="1475" y="980" width="312" height="82" rx="20" fill="rgba(229,243,255,0.96)"/>
+    <text x="1505" y="1031" fill="#0F5CC3" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Cat Lai Port</text>
+
+    <rect x="1678" y="1218" width="360" height="82" rx="20" fill="rgba(255,244,221,0.97)"/>
+    <text x="1708" y="1269" fill="#A66800" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Cai Mep - Thi Vai</text>
+
+    <rect x="985" y="746" width="266" height="76" rx="20" fill="rgba(223,248,246,0.96)"/>
+    <text x="1015" y="794" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Tan Son Nhat</text>
+
+    <rect x="1800" y="770" width="284" height="76" rx="20" fill="rgba(223,248,246,0.96)"/>
+    <text x="1830" y="818" fill="#0D7B78" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Long Thanh</text>
+
+    <rect x="370" y="274" width="310" height="82" rx="20" fill="rgba(242,236,255,0.96)"/>
+    <text x="400" y="325" fill="#5B45CC" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Moc Bai Corridor</text>
+  </g>
+
+  <g opacity="0.8">
+    <path d="M1733 1174C1885 1245 2025 1322 2190 1436" stroke="url(#seaRoute)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M2189 1436L2165 1422" stroke="#F08A00" stroke-width="8" stroke-linecap="round"/>
+    <path d="M2189 1436L2170 1459" stroke="#F08A00" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1840" y="1388" width="430" height="122" rx="28" fill="rgba(255,248,233,0.96)"/>
+    <text x="1878" y="1444" fill="#D78500" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">SEA CONNECTIVITY</text>
+    <text x="1878" y="1488" fill="#11375D" font-family="Manrope, sans-serif" font-size="28">Fast access to ASEAN shipping lanes</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "name": "uav-manufacturing-slides",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export --output dist/UAV-Manufacturing-Complex.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.15.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.59.1"
+  },
+  "dependencies": {
+    "mermaid": "^11.14.0"
+  }
+}

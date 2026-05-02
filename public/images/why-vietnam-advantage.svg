@@ -1,0 +1,93 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-200" y="-200" width="2000" height="1600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#17406B" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="panel" x1="120" y1="80" x2="1480" y2="1130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.99"/>
+      <stop offset="1" stop-color="#EDF6FF" stop-opacity="0.97"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(810 610) rotate(90) scale(290)">
+      <stop offset="0" stop-color="#59C6F2" stop-opacity="0.34"/>
+      <stop offset="0.58" stop-color="#1F7AFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#1F7AFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="585" y1="385" x2="1035" y2="835" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#59C6F2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="36" width="1552" height="1128" rx="58" fill="url(#panel)"/>
+  <rect x="24" y="36" width="1552" height="1128" rx="58" stroke="#D9E8F9" stroke-width="2"/>
+
+  <circle cx="810" cy="610" r="282" fill="url(#coreGlow)"/>
+  <circle cx="810" cy="610" r="198" fill="#F9FCFF" stroke="url(#ring)" stroke-width="18"/>
+
+  <g opacity="0.78" stroke="#C6DCF6" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 14">
+    <path d="M810 410V220"/>
+    <path d="M662 508L430 350"/>
+    <path d="M670 728L428 876"/>
+    <path d="M958 510L1196 352"/>
+    <path d="M952 726L1198 868"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="628" y="486" width="364" height="246" rx="38" fill="#FFFFFF"/>
+    <text x="810" y="566" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="36" font-weight="700" text-anchor="middle">WHY NOW</text>
+    <text x="810" y="646" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="78" font-weight="700" text-anchor="middle">VIETNAM</text>
+    <text x="810" y="700" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="34" font-weight="800" text-anchor="middle">UAV FACTORY BASE</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="645" y="112" width="330" height="114" rx="30" fill="#EAF4FF"/>
+    <circle cx="713" cy="169" r="28" fill="#FFFFFF"/>
+    <path d="M700 173L713 159L726 173" stroke="#1F7AFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M713 159V187" stroke="#1F7AFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="760" y="161" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Demand Rising</text>
+    <text x="760" y="196" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="24" font-weight="700">Market pull</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="160" y="252" width="390" height="124" rx="30" fill="#ECFBF7"/>
+    <circle cx="230" cy="314" r="28" fill="#FFFFFF"/>
+    <path d="M216 322H244" stroke="#1FB8A6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M230 305V322" stroke="#1FB8A6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M216 305L230 292L244 305" stroke="#1FB8A6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="278" y="306" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Policy Support</text>
+    <text x="278" y="341" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="24" font-weight="700">Industrial push</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="152" y="832" width="418" height="126" rx="30" fill="#FFF7E7"/>
+    <circle cx="224" cy="895" r="28" fill="#FFFFFF"/>
+    <path d="M210 902L223 889L230 896L244 880" stroke="#D58A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M239 880H245V886" stroke="#D58A00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="274" y="888" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Cost + Talent</text>
+    <text x="274" y="923" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="24" font-weight="700">Build advantage</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1068" y="252" width="374" height="124" rx="30" fill="#EEF4FF"/>
+    <circle cx="1138" cy="314" r="28" fill="#FFFFFF"/>
+    <path d="M1124 320L1138 306L1152 320" stroke="#5E6BFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1124 308H1152" stroke="#5E6BFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="1188" y="306" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Infra Upgrade</text>
+    <text x="1188" y="341" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="24" font-weight="700">Roads, ports, airports</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1040" y="832" width="406" height="126" rx="30" fill="#EEF8FF"/>
+    <circle cx="1112" cy="895" r="28" fill="#FFFFFF"/>
+    <path d="M1098 895H1126" stroke="#1F7AFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1112 881V909" stroke="#1F7AFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1112" cy="895" r="16" stroke="#1F7AFF" stroke-width="4"/>
+    <text x="1160" y="887" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">ASEAN Gateway</text>
+    <text x="1160" y="922" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="24" font-weight="700">Regional access</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="492" y="1004" width="636" height="92" rx="24" fill="#F9FCFF"/>
+    <text x="810" y="1062" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle">Policy + talent + demand + infrastructure + ASEAN access</text>
+  </g>
+</svg>

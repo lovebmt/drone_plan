@@ -1,0 +1,89 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5FBFF"/>
+      <stop offset="100%" stop-color="#E2F1FF"/>
+    </linearGradient>
+    <linearGradient id="vn" x1="321" y1="60" x2="598" y2="792" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFE7FF"/>
+      <stop offset="1" stop-color="#EAF5FF"/>
+    </linearGradient>
+    <linearGradient id="south" x1="360" y1="560" x2="530" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#59C6F2"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#2B5A8D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#sea)"/>
+  <circle cx="1010" cy="140" r="150" fill="#DDF2FF"/>
+  <circle cx="1010" cy="140" r="110" fill="#ECF8FF"/>
+  <circle cx="1030" cy="710" r="170" fill="#FFF3D6" fill-opacity="0.75"/>
+
+  <g opacity="0.85">
+    <path d="M338 70C316 78 307 98 311 124C316 154 309 178 290 205C273 230 274 257 290 280C306 304 309 326 297 350C286 372 285 395 296 417C308 440 313 464 306 488C298 515 300 539 314 560C329 582 335 606 327 630C320 651 322 673 336 694C352 718 360 743 352 769C345 791 350 812 369 826C389 840 416 843 440 832C465 820 481 801 487 778C494 753 504 729 524 710C543 691 554 666 549 639C544 612 546 589 561 569C579 545 591 522 587 493C583 467 587 444 603 423C620 401 631 374 625 345C619 315 621 289 638 261C655 233 655 204 636 178C618 154 613 127 621 98C629 68 620 43 595 28C570 14 540 16 516 30C491 44 470 67 454 96C441 120 432 140 435 161C438 185 452 209 469 233C485 257 485 282 470 306C455 328 451 350 456 373C462 402 475 427 487 450C499 474 500 498 491 521C482 545 484 568 499 589C516 612 523 637 518 662C513 686 503 708 495 730C487 753 482 778 487 801C491 822 503 839 523 851C544 863 570 865 591 855C614 844 629 824 631 799C633 774 641 752 660 734C681 714 694 691 690 661C687 633 691 608 708 587C725 565 734 540 728 511C722 481 723 455 738 429C754 402 761 375 754 346C747 315 748 290 760 266C773 239 772 210 753 185C736 160 732 133 739 104C746 73 736 48 710 33C685 20 655 21 632 34C607 47 589 67 576 94C565 118 560 139 565 159C571 183 584 206 601 228C620 252 620 279 604 306C588 334 583 359 589 383C596 411 609 436 622 460C634 484 635 510 625 535C615 559 617 583 633 604C650 626 658 650 653 675C648 700 638 722 629 746C621 769 623 791 636 810C650 830 672 840 697 839C720 838 740 828 754 810" fill="url(#vn)" stroke="#9DCAE8" stroke-width="5"/>
+    <path d="M473 594C489 610 496 636 492 663C488 691 480 712 472 736C464 761 463 781 472 798C482 815 497 826 517 832C539 839 561 837 578 826C596 814 608 796 609 774C611 751 618 734 636 718C656 700 668 680 665 653C662 626 666 605 682 585C699 563 706 541 699 516C695 501 683 492 664 489C641 486 618 491 598 503C573 517 553 533 531 555C512 573 494 585 473 594Z" fill="url(#south)" opacity="0.92"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="720" y="84" width="392" height="132" rx="24" fill="rgba(255,255,255,0.84)"/>
+    <text x="756" y="126" fill="#123459" font-family="Manrope, sans-serif" font-size="28" font-weight="800">Preferred Manufacturing Cluster</text>
+    <text x="756" y="166" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="22">Ho Chi Minh City - Binh Duong - Long An</text>
+    <text x="756" y="196" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="22">Best overlap of labor, suppliers, ports, airports, and highways</text>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M536 650L796 294" stroke="#70B8FF" stroke-width="4" stroke-dasharray="12 10"/>
+    <path d="M560 675L806 420" stroke="#70B8FF" stroke-width="4" stroke-dasharray="12 10"/>
+    <path d="M520 707L780 560" stroke="#7DDACF" stroke-width="4" stroke-dasharray="12 10"/>
+    <path d="M565 720L866 672" stroke="#F0B548" stroke-width="4" stroke-dasharray="12 10"/>
+  </g>
+
+  <g>
+    <circle cx="506" cy="664" r="11" fill="#0E4AA8"/>
+    <circle cx="536" cy="626" r="10" fill="#1F7AFF"/>
+    <circle cx="475" cy="712" r="10" fill="#00A2C7"/>
+    <text x="566" y="636" fill="#0E4AA8" font-family="Manrope, sans-serif" font-size="22" font-weight="800">Binh Duong</text>
+    <text x="566" y="668" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Industrial parks, suppliers, labor pool</text>
+    <text x="526" y="704" fill="#0E4AA8" font-family="Manrope, sans-serif" font-size="22" font-weight="800">Ho Chi Minh City</text>
+    <text x="526" y="736" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Commercial hub, engineering talent, customers</text>
+    <text x="382" y="762" fill="#0E4AA8" font-family="Manrope, sans-serif" font-size="22" font-weight="800">Long An</text>
+    <text x="382" y="794" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Land availability, western corridor access</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="792" y="250" width="302" height="112" rx="24" fill="rgba(255,255,255,0.92)"/>
+    <text x="826" y="292" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">SEAPORT ACCESS</text>
+    <text x="826" y="326" fill="#123459" font-family="Manrope, sans-serif" font-size="20" font-weight="800">Cat Lai + Cai Mep</text>
+    <text x="826" y="352" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Export gateway to ASEAN and global shipping lanes</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="806" y="376" width="290" height="112" rx="24" fill="rgba(255,255,255,0.92)"/>
+    <text x="840" y="418" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">AIR ACCESS</text>
+    <text x="840" y="452" fill="#123459" font-family="Manrope, sans-serif" font-size="20" font-weight="800">Tan Son Nhat + Long Thanh</text>
+    <text x="840" y="478" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Fast executive travel, urgent cargo, regional connectivity</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="778" y="522" width="312" height="120" rx="24" fill="rgba(255,255,255,0.92)"/>
+    <text x="812" y="564" fill="#1FB8A6" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">ROAD NETWORK</text>
+    <text x="812" y="598" fill="#123459" font-family="Manrope, sans-serif" font-size="20" font-weight="800">Expressways + ring roads + QL1A / QL13</text>
+    <text x="812" y="624" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Supplier inflow, outbound delivery, Cambodia corridor access</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="862" y="646" width="248" height="126" rx="24" fill="rgba(255,250,237,0.95)"/>
+    <text x="896" y="688" fill="#D58A00" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">ASEAN REACH</text>
+    <text x="896" y="722" fill="#123459" font-family="Manrope, sans-serif" font-size="20" font-weight="800">Mekong + maritime routes</text>
+    <text x="896" y="748" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="18">Links to Cambodia, Thailand, Singapore, and wider SEA trade lanes</text>
+  </g>
+
+  <g opacity="0.85">
+    <path d="M705 694C753 680 810 670 860 667" stroke="#D58A00" stroke-width="4"/>
+    <path d="M868 667L851 657" stroke="#D58A00" stroke-width="4" stroke-linecap="round"/>
+    <path d="M868 667L850 678" stroke="#D58A00" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-200" y="-200" width="2000" height="1600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#17406B" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="panel" x1="120" y1="60" x2="1480" y2="1140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.99"/>
+      <stop offset="1" stop-color="#EDF6FF" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="ringBlue" x1="198" y1="260" x2="602" y2="662" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#59C6F2"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="838" y1="376" x2="1388" y2="376" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#59C6F2"/>
+    </linearGradient>
+    <linearGradient id="footer" x1="120" y1="748" x2="1480" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF7FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="36" width="1552" height="1128" rx="58" fill="url(#panel)"/>
+  <rect x="24" y="36" width="1552" height="1128" rx="58" stroke="#D9E8F9" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="88" width="1420" height="120" rx="34" fill="#FFFFFF"/>
+    <text x="146" y="148" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700">EXPORT-FIRST MODEL</text>
+    <text x="146" y="190" fill="#123459" font-family="Manrope, sans-serif" font-size="34" font-weight="800">70% of revenue targeted from export markets</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="248" width="610" height="438" rx="42" fill="#FFFFFF"/>
+    <text x="140" y="322" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700">Market split</text>
+    <circle cx="392" cy="486" r="154" fill="#FFFFFF"/>
+    <path d="M392 332 A154 154 0 1 1 256 558" stroke="url(#ringBlue)" stroke-width="46" stroke-linecap="round"/>
+    <path d="M256 558 A154 154 0 0 1 392 332" stroke="#DDEBFA" stroke-width="46" stroke-linecap="round"/>
+    <text x="392" y="458" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700" text-anchor="middle">EXPORT</text>
+    <text x="392" y="532" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="104" font-weight="700" text-anchor="middle">70%</text>
+    <rect x="152" y="600" width="482" height="52" rx="26" fill="#F2F8FF"/>
+    <text x="393" y="634" fill="#5C6D83" font-family="Manrope, sans-serif" font-size="28" font-weight="800" text-anchor="middle">30% Vietnam market base</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="732" y="248" width="778" height="438" rx="42" fill="#FFFFFF"/>
+    <text x="786" y="322" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700">Revenue mix</text>
+
+    <text x="786" y="382" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800">UAV sales</text>
+    <rect x="786" y="402" width="566" height="32" rx="16" fill="url(#barBlue)"/>
+    <text x="1392" y="427" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="end">60%</text>
+
+    <text x="786" y="470" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Services and training</text>
+    <rect x="786" y="490" width="190" height="32" rx="16" fill="#1FB8A6"/>
+    <text x="1016" y="515" fill="#0F7D8B" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="end">20%</text>
+
+    <text x="786" y="558" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Software and AI</text>
+    <rect x="786" y="578" width="95" height="32" rx="16" fill="#7DBDFF"/>
+    <text x="921" y="603" fill="#1F7AFF" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="end">10%</text>
+
+    <text x="786" y="646" fill="#123459" font-family="Manrope, sans-serif" font-size="30" font-weight="800">Accessories and batteries</text>
+    <rect x="786" y="666" width="95" height="32" rx="16" fill="#FFBE3B"/>
+    <text x="921" y="691" fill="#C57A00" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="end">10%</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="736" width="1420" height="356" rx="42" fill="url(#footer)"/>
+    <text x="142" y="808" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700">4-product platform</text>
+
+    <g>
+      <rect x="132" y="846" width="308" height="194" rx="32" fill="#FFFFFF"/>
+      <circle cx="286" cy="904" r="34" fill="#EDF5FF"/>
+      <path d="M257 897H315M286 878V930M269 886L276 893M303 915L310 922M303 886L310 893M269 915L276 922" stroke="#1F7AFF" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="258" cy="926" r="7" fill="#59C6F2"/>
+      <circle cx="276" cy="936" r="7" fill="#59C6F2"/>
+      <circle cx="294" cy="926" r="7" fill="#59C6F2"/>
+      <circle cx="312" cy="936" r="7" fill="#59C6F2"/>
+      <text x="286" y="985" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Agriculture</text>
+    </g>
+
+    <g>
+      <rect x="470" y="846" width="308" height="194" rx="32" fill="#FFFFFF"/>
+      <circle cx="624" cy="904" r="34" fill="#EEFBF8"/>
+      <path d="M593 904C606 887 642 887 655 904C642 921 606 921 593 904Z" stroke="#1FB8A6" stroke-width="8" fill="none" stroke-linejoin="round"/>
+      <circle cx="624" cy="904" r="11" fill="#1FB8A6"/>
+      <text x="624" y="985" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Surveillance</text>
+    </g>
+
+    <g>
+      <rect x="808" y="846" width="308" height="194" rx="32" fill="#FFFFFF"/>
+      <circle cx="962" cy="904" r="34" fill="#F2F8FF"/>
+      <path d="M962 874L972 882L986 880L988 894L998 904L988 914L986 928L972 926L962 934L952 926L938 928L936 914L926 904L936 894L938 880L952 882L962 874Z" fill="#7DBDFF"/>
+      <circle cx="962" cy="904" r="16" fill="#FFFFFF"/>
+      <text x="962" y="985" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Industrial</text>
+    </g>
+
+    <g>
+      <rect x="1146" y="846" width="308" height="194" rx="32" fill="#FFFFFF"/>
+      <circle cx="1300" cy="904" r="34" fill="#FFF7E7"/>
+      <path d="M1268 896L1300 880L1332 896L1300 912L1268 896Z" fill="#FFBE3B"/>
+      <path d="M1278 900V916C1292 926 1308 926 1322 916V900" stroke="#C57A00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1332 896V920" stroke="#C57A00" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="1332" cy="928" r="6" fill="#C57A00"/>
+      <text x="1300" y="985" fill="#123459" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Education</text>
+    </g>
+  </g>
+</svg>
