@@ -3,6 +3,7 @@ node_modules/
 .slidev/
 dist/*
 !dist/UAV-Manufacturing-Complex.pdf
+!dist/UAV-Manufacturing-Complex-Editable.pptx
 dist-pages/
 /*.png
 dist/UAV-Manufacturing-Complex.pdf
