@@ -314,7 +314,7 @@ body,
 }
 
 .slidev-layout.two-columns.business-layout {
-  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
   column-gap: 0.65rem;
 }
 
@@ -341,7 +341,7 @@ body,
 
 .business .col-right {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -355,6 +355,242 @@ body,
   max-height: 29rem;
   object-fit: contain;
   display: block;
+}
+
+.business-native {
+  width: 100%;
+  display: grid;
+  gap: 0.56rem;
+  align-content: stretch;
+}
+
+.business-native.business-native-operating,
+.business .col-right .business-native {
+  min-height: 100%;
+}
+
+.business-native-card {
+  border: 1px solid rgba(31, 122, 255, 0.1);
+  border-radius: 1.6rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(234, 244, 255, 0.92)),
+    var(--deck-panel);
+  box-shadow: var(--deck-shadow);
+  padding: 0.95rem 1rem;
+}
+
+.business-native-flow {
+  min-height: 11.6rem;
+}
+
+.business-native-kicker {
+  margin-bottom: 0.56rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--deck-blue);
+}
+
+.business-native-track {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.business-native-track-operating {
+  grid-template-columns: 1fr;
+  gap: 0.28rem;
+}
+
+.business-native-node {
+  display: grid;
+  gap: 0.34rem;
+  min-height: 4.8rem;
+  padding: 0.64rem 0.72rem 0.62rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(31, 122, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.business-native-node strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.06;
+  color: var(--deck-ink);
+}
+
+.business-native-node span {
+  font-size: 0.74rem;
+  line-height: 1.28;
+  color: var(--deck-muted);
+}
+
+.business-native-node-china {
+  background: linear-gradient(135deg, rgba(234, 244, 255, 0.96), rgba(226, 239, 255, 0.88));
+}
+
+.business-native-node-vietnam {
+  background: linear-gradient(135deg, rgba(231, 250, 246, 0.96), rgba(220, 246, 241, 0.9));
+}
+
+.business-native-node-asean {
+  background: linear-gradient(135deg, rgba(255, 247, 231, 0.98), rgba(255, 240, 214, 0.92));
+}
+
+.business-native-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--deck-blue);
+}
+
+.business-native-arrow-vertical {
+  min-height: 0.82rem;
+  font-size: 1.15rem;
+}
+
+.business-native-sequence {
+  padding-bottom: 0.74rem;
+}
+
+.business-native-sequence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.48rem;
+}
+
+.business-native-sequence-step {
+  display: grid;
+  align-content: start;
+  gap: 0.28rem;
+  min-height: 0;
+  padding: 0.52rem 0.56rem;
+  border-radius: 1.08rem;
+  border: 1px solid rgba(31, 122, 255, 0.08);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.business-native-sequence-step strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1f7aff, #4698ff);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: white;
+}
+
+.business-native-sequence-step span {
+  font-size: 0.62rem;
+  line-height: 1.16;
+  color: var(--deck-muted);
+}
+
+.business-native-chart {
+  padding-bottom: 1.05rem;
+}
+
+.business-native-stack {
+  display: flex;
+  width: 100%;
+  min-height: 3rem;
+  overflow: hidden;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.business-native-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: white;
+}
+
+.business-native-segment-hardware {
+  background: linear-gradient(135deg, #1f7aff, #4698ff);
+}
+
+.business-native-segment-service {
+  background: linear-gradient(135deg, #1fb8a6, #35cbb8);
+}
+
+.business-native-segment-software {
+  background: linear-gradient(135deg, #5e6bff, #7d7dff);
+}
+
+.business-native-segment-parts {
+  background: linear-gradient(135deg, #ffbe3b, #f08a00);
+}
+
+.business-native-legend {
+  margin-top: 0.78rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.business-native-legend-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 0.55rem;
+  row-gap: 0.12rem;
+  align-items: start;
+  padding: 0.62rem 0.68rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(31, 122, 255, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.business-native-dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-top: 0.2rem;
+  border-radius: 999px;
+}
+
+.business-native-dot-hardware {
+  background: #1f7aff;
+}
+
+.business-native-dot-service {
+  background: #1fb8a6;
+}
+
+.business-native-dot-software {
+  background: #5e6bff;
+}
+
+.business-native-dot-parts {
+  background: #f08a00;
+}
+
+.business-native-legend-item strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  color: var(--deck-ink);
+}
+
+.business-native-legend-item span:last-child {
+  grid-column: 2;
+  font-size: 0.7rem;
+  line-height: 1.24;
+  color: var(--deck-muted);
 }
 
 .thesis .col-left > p {
@@ -516,6 +752,7 @@ body,
 }
 
 .factory-gantt .mermaid {
+  --gantt-font-size: 12px;
   margin-top: 1rem;
   padding: 0.72rem 0.84rem;
   border: 1px solid var(--deck-line);
@@ -529,19 +766,7 @@ body,
 .factory-gantt .mermaid svg {
   width: 100%;
   height: auto;
-  min-height: 24rem;
-}
-
-.factory-gantt .mermaid svg text,
-.factory-gantt .mermaid svg .taskText,
-.factory-gantt .mermaid svg .sectionTitle text {
-  font-size: 22px !important;
-}
-
-.factory-gantt .mermaid svg .grid .tick text,
-.factory-gantt .mermaid svg .tick text,
-.factory-gantt .mermaid svg .sectionText {
-  font-size: 20px !important;
+  min-height: 27rem;
 }
 
 .factory-gantt p:last-of-type {
@@ -622,6 +847,9 @@ body,
 
 .closing h1 {
   max-width: 13em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .closing p {
@@ -706,6 +934,27 @@ body,
   .capital .col-right ul,
   .closing ul,
   .roadmap ol {
+    grid-template-columns: 1fr;
+  }
+
+  .business-native-track {
+    grid-template-columns: 1fr;
+  }
+
+  .business-native-arrow {
+    min-height: 1.1rem;
+    transform: rotate(90deg);
+  }
+
+  .business-native-arrow-vertical {
+    transform: none;
+  }
+
+  .business-native-legend {
+    grid-template-columns: 1fr;
+  }
+
+  .business-native-sequence-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -878,7 +1127,7 @@ body,
     transform: scale(var(--deck-mobile-fit));
     width: calc(100% / var(--deck-mobile-fit));
     height: calc(100% / var(--deck-mobile-fit));
-    grid-template-columns: minmax(0, 0.56fr) minmax(0, 1.44fr);
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
     column-gap: 0.42rem;
   }
 
@@ -903,6 +1152,89 @@ body,
     max-height: 15.2rem;
   }
 
+  .business-native-card {
+    padding: 0.82rem 0.88rem;
+    border-radius: 1.16rem;
+  }
+
+  .business-native-kicker {
+    margin-bottom: 0.5rem;
+    font-size: 0.58rem;
+  }
+
+  .business-native-track {
+    gap: 0.22rem;
+  }
+
+  .business-native-node {
+    min-height: 0;
+    padding: 0.52rem 0.56rem;
+    border-radius: 0.84rem;
+  }
+
+  .business-native-node strong {
+    font-size: 0.62rem;
+  }
+
+  .business-native-node span,
+  .business-native-legend-item span:last-child {
+    font-size: 0.54rem;
+  }
+
+  .business-native-arrow {
+    font-size: 0.95rem;
+  }
+
+  .business-native-sequence-grid {
+    gap: 0.3rem;
+  }
+
+  .business-native-sequence-step {
+    min-height: 0;
+    padding: 0.44rem 0.48rem;
+    border-radius: 0.82rem;
+    gap: 0.26rem;
+  }
+
+  .business-native-sequence-step strong {
+    width: 1.05rem;
+    height: 1.05rem;
+    font-size: 0.56rem;
+  }
+
+  .business-native-sequence-step span {
+    font-size: 0.52rem;
+    line-height: 1.18;
+  }
+
+  .business-native-stack {
+    min-height: 1.8rem;
+  }
+
+  .business-native-segment {
+    font-size: 0.56rem;
+  }
+
+  .business-native-legend {
+    margin-top: 0.4rem;
+    gap: 0.24rem;
+  }
+
+  .business-native-legend-item {
+    padding: 0.34rem 0.4rem;
+    column-gap: 0.34rem;
+  }
+
+  .business-native-dot {
+    width: 0.48rem;
+    height: 0.48rem;
+    margin-top: 0.16rem;
+  }
+
+  .business-native-legend-item strong {
+    font-size: 0.58rem;
+  }
+
   .slidev-layout.dual-map {
     gap: 0.45rem;
   }
@@ -920,15 +1252,6 @@ body,
 
   .factory-gantt .mermaid svg {
     min-height: 14.8rem;
-  }
-
-  .factory-gantt .mermaid svg text,
-  .factory-gantt .mermaid svg .taskText,
-  .factory-gantt .mermaid svg .sectionTitle text,
-  .factory-gantt .mermaid svg .grid .tick text,
-  .factory-gantt .mermaid svg .tick text,
-  .factory-gantt .mermaid svg .sectionText {
-    font-size: 14px !important;
   }
 
   .roadmap ol {

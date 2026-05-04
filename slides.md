@@ -91,7 +91,48 @@ A staged China-plus-Vietnam model reduces startup risk, shortens time to market,
 
 ::right::
 
-![Business model visual](./public/images/business-model-visual.png)
+<div class="business-native">
+  <div class="business-native-card business-native-flow">
+    <div class="business-native-kicker">Operating Architecture</div>
+    <div class="business-native-track business-native-track-operating">
+      <div class="business-native-node business-native-node-china">
+        <strong>China Platform</strong>
+        <span>core modules, qualified suppliers, SOPs, and QA templates</span>
+      </div>
+      <div class="business-native-arrow business-native-arrow-vertical" aria-hidden="true">↓</div>
+      <div class="business-native-node business-native-node-vietnam">
+        <strong>Vietnam Base</strong>
+        <span>final assembly, testing, localization, after-sales, and service</span>
+      </div>
+      <div class="business-native-arrow business-native-arrow-vertical" aria-hidden="true">↓</div>
+      <div class="business-native-node business-native-node-asean">
+        <strong>ASEAN Channels</strong>
+        <span>Vietnam first, then regional distributors and service partners</span>
+      </div>
+    </div>
+  </div>
+  <div class="business-native-card business-native-sequence">
+    <div class="business-native-kicker">Execution Sequence</div>
+    <div class="business-native-sequence-grid">
+      <div class="business-native-sequence-step">
+        <strong>1</strong>
+        <span>Transfer BOM, tooling, and QA templates from China</span>
+      </div>
+      <div class="business-native-sequence-step">
+        <strong>2</strong>
+        <span>Install line, train team, and localize assembly workflow</span>
+      </div>
+      <div class="business-native-sequence-step">
+        <strong>3</strong>
+        <span>Validate pilot builds with local testing and reference projects</span>
+      </div>
+      <div class="business-native-sequence-step">
+        <strong>4</strong>
+        <span>Scale sales, service, and channel coverage across ASEAN</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 class: factory-gantt
@@ -104,7 +145,6 @@ class: factory-gantt
   'theme': 'base',
   'themeVariables': {
     'fontFamily': 'Manrope',
-    'fontSize': '22px',
     'primaryColor': '#DCEEFF',
     'primaryTextColor': '#123459',
     'primaryBorderColor': '#1F7AFF',
@@ -135,31 +175,6 @@ gantt
 ```
 
 Target outcome: **a commissioned Vietnam base in 12 months, with first deliveries completed and the first full operating year targeted near 8M USD**
-
----
-layout: two-cols
-class: ops
----
-
-## Execution Model
-
-> **China + Vietnam split**  
-> China provides platform leverage and supplier depth. Vietnam provides local execution and ASEAN access.
-
-
-
-::right::
-
-### Operating responsibilities
-
-- **China base**  
-  Platform design, core electronics, QA templates, and supplier network
-- **Vietnam base**  
-  Final assembly, testing, localization, field service, and customer delivery
-- **Local team 120-150 people**  
-  Production, engineering support, business development, and back office
-- **Commercial sequence**  
-  Agriculture and industrial inspection first, then ASEAN distributors and partners
 
 ---
 class: roadmap
@@ -204,44 +219,50 @@ class: capital
 
 ::right::
 
-### What this unlocks in 24 months
+### First-year revenue logic
 
-- **Factory commissioned**  
-  Vietnam assembly, QA, testing, and service base
-- **Commercial proof**  
-  Reference customers in Vietnam and first ASEAN channel partners
-- **Strategic value**  
-  A second manufacturing base for your group outside China
-- **Financial target**  
-  Around `8M USD` in the first full operating year
+<div class="business-native business-native-capital">
+  <div class="business-native-card business-native-chart">
+    <div class="business-native-kicker">Illustrative Year-1 Revenue Mix</div>
+    <div class="business-native-stack" aria-label="Illustrative year-1 revenue mix">
+      <span class="business-native-segment business-native-segment-hardware" style="width: 60%;">60%</span>
+      <span class="business-native-segment business-native-segment-service" style="width: 20%;">20%</span>
+      <span class="business-native-segment business-native-segment-software" style="width: 10%;">10%</span>
+      <span class="business-native-segment business-native-segment-parts" style="width: 10%;">10%</span>
+    </div>
+    <div class="business-native-legend">
+      <div class="business-native-legend-item">
+        <span class="business-native-dot business-native-dot-hardware"></span>
+        <strong>Hardware</strong>
+        <span>Main platform revenue</span>
+      </div>
+      <div class="business-native-legend-item">
+        <span class="business-native-dot business-native-dot-service"></span>
+        <strong>Service</strong>
+        <span>maintenance, training, support</span>
+      </div>
+      <div class="business-native-legend-item">
+        <span class="business-native-dot business-native-dot-software"></span>
+        <strong>Software</strong>
+        <span>data, workflow, value-added tools</span>
+      </div>
+      <div class="business-native-legend-item">
+        <span class="business-native-dot business-native-dot-parts"></span>
+        <strong>Parts + batteries</strong>
+        <span>spares, accessories, replacement cycles</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+Around `8M USD` in the first full operating year, with revenue anchored by hardware and margin expansion supported by service, software, and recurring parts demand.
 
 ---
-layout: two-cols
-class: market
+class: closing
 ---
 
-## Why This Is Attractive to Your Group
+# Thank You<br>谢谢
 
-### Strategic fit
+We welcome your questions and next-step discussion on the Vietnam manufacturing base opportunity.
 
-- **Extend, not replace China**  
-  Keep core platform and supplier strengths where they already work
-- **Open Vietnam faster**  
-  Local presence improves hiring, customer trust, and market access
-- **Build ASEAN optionality**  
-  Vietnam becomes the bridge into nearby regional channels
-- **Create valuation upside**  
-  A dual-base model is stronger than a single-country manufacturing footprint
-
-::right::
-
-### Risk control
-
-- **Start with proven platforms**  
-  No need to fund product invention from zero on day one
-- **Localize in stages**  
-  Begin with transfer and assembly, then deepen sourcing over time
-- **Validate with reference customers**  
-  Win early proof before committing aggressive scale capex
-- **Keep supply flexibility**  
-  Use China supply depth first and expand local sourcing selectively
+欢迎继续交流，并讨论越南制造基地项目的下一步合作。
