@@ -47,6 +47,28 @@ npx slidev export --output dist/UAV-Manufacturing-Complex.pdf --executable-path 
 
 Ban PDF da duoc export san tai `dist/UAV-Manufacturing-Complex.pdf`.
 
+## Export editable PowerPoint
+
+Co the export mot ban PowerPoint de chinh sua tiep:
+
+```bash
+npm run export:pptx
+```
+
+Output:
+
+```bash
+dist/UAV-Manufacturing-Complex-Editable.pptx
+```
+
+Luu y ve muc do editable:
+
+- text chinh cua deck duoc tao thanh textbox / shape trong PowerPoint nen co the sua truc tiep
+- cac visual phuc tap nhu map infographic va gantt timeline duoc giu dang image de tranh vo layout
+- slide timeline Gantt hien dang duoc dua vao PowerPoint tu anh render cua slide web, khong phai object chart native cua PowerPoint
+
+Logic export nam trong `scripts/export-pptx.mjs`.
+
 ## File chinh
 
 - `content.md`: noi dung goc
